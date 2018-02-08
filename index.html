@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="codevidyalaya">
+<head>
+    <title>Codevidyalaya Hello-world-with-Angularjs</title>
+	  <meta charset="utf-8" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" />
+</head>
+<body ng-controller="codevidyalayaController">
+    <div class="col-md-12">
+        <div class="row" style="padding-bottom:5px;">
+            <div class="col-md-12">
+              <h4>{{mesaage}}</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+<script type="text/javascript">
+    var app = angular.module("codevidyalaya", []);
+    app.controller("codevidyalayaController", ['$scope', '$filter',
+    function ($scope, $filter) {
+        $scope.mesaage = "Hello World !";
+    }]);
+</script>
